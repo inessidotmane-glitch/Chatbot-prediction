@@ -13,6 +13,3 @@ def clean_batch(texts):
 
 demo_pred = pipe.predict(clean_batch(demo))
 df = pd.DataFrame({"question_en": demo, "predicted_category": demo_pred})
-
-
-print(df.head())
